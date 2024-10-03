@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --background-color:hsl(195, 91%, 25%);
+  --background-primary: hsla(0, 0%, 100%, 0.2);
+  --background-secondary:hsl(196, 100%, 98%);
+
+  --color-primary:  hsl(240, 5%, 7%);
+  --color-secondary:hsl(240, 6%, 13%);
+  --color-terciary:hsl(0, 0%, 100%);
+  font-size: 62.5%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+header{
+  width:100%;
+  height: 7.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.0rem;
+  background-color:var(--background-color);
+  
+}
+#header{
+  display: flex;
+  justify-content: center;
+  gap: 3.0rem;
+  width: 144.0rem;
+}
+  
+header img:first-child{
+  width: 4.0rem;
+  height: 4.0rem;
+  background: var(--background-secondary);
+  border-radius: 50%;
+  padding: .8rem;
+}
+
+form input{
+  
+  padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+  border-radius: .4rem;
+  background: var(--background-primary);
+  border: 0;
+}
+
+form input::placeholder{
+  color: var(--color-terciary);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; 
+  
+}
+main{
+  
+  width:430px;
+  padding: 0 2.6rem .8rem 2.2rem;
+  background: var(--background-secondary);
+}
+main img{
+  width: 100%;
+}
+
+main h1{
+  margin-top: 3.1rem;
+  margin-bottom: .8rem;
+  color: var(--color-secondary);
+  font-family: Mulish;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; 
+}
+main div{
+  display: flex;
+  gap: 1.2rem;
+  
+}
+
+
+main div img{
+  border-radius: 50%;
+  background:  var(--background-color);
+  padding: 1.2rem;
+  margin-bottom: 3.1rem;
+  width: 4.0rem;
+  height: 4.0rem;
+  
+}
+
+
+main p{
+  width: 38.2rem;
+  color: var(--color-primary);
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+  
+}
+
+
+
+aside{
+  
+  width: 43.0rem;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  
+}
+
+aside h1{
+  
+  
+  color: var(--color-primary);
+  font-family: Mulish;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; 
+
+}
+aside .flex-aside{
+  display: flex;
+}
+
+aside .flex{
+  display: flex;
+  flex-direction: column;
+}
+
+aside .flex h2, aside .flex p{
+  margin-left: 1.6rem;
+ 
+}
+aside .flex h2{
+  color: var(--color-primary);
+  font-family: Mulish;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; 
+
+}
+
+aside .flex p{
+  color: var(--color-primary);
+  font-family: Mulish;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; 
+
+}
+
+footer{
+  width: 100%;
+  height: 6.4rem;
+  background:var(--background-color);
+  padding: 1.6rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.9rem;
+}
+
+footer p{
+  color: var(--color-terciary);
+  font-family: Mulish;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+ 
+}
+  
+@media(min-width:1440px){
+  #app{
+   
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main    aside"
+    "footer   footer";
+    gap: 3.4rem;
+    padding: .8rem 11.2rem 0px 11.2rem;
+    width: 1440px;
+  }
+
+  header{
+    grid-area: header;
+   
+  }
+
+  form input{
+    width: 107.5rem;
+  }
+
+  main{
+    grid-area: main;
+    width:  80.3rem;
+    
+   
+  }
+  
+  main img {
+   background-image: url('assets/unsplash_H-XOmJhbM3s\ \(1\).png');
+   border-radius: .5rem;
+  }
+
+  main p{
+    width: 80.0rem;
+    padding: 0 2.6rem 0px 0px;
+  }
+
+  aside{
+    grid-area: aside;
+    width: 38.4rem;
+    background-color:var(--background-secondary);
+  }
+
+  header{
+    --startY:-100%;
+    animation:move .5s;
+  }
+
+  footer{
+    grid-area: footer;
+    margin-top: 0;
+
+    --startY:100%;
+    animation:move .5s;
+  }
+
+  @keyframes move {
+    from{
+      transform: translateY(var(--startY));
+    }
+    to { 
+      transform: translateY(0); 
+    }
+  }
+
+
+}  
