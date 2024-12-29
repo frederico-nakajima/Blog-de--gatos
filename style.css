@@ -98,7 +98,9 @@ main div img{
   height: 4.0rem;
   
 }
-
+main div img:hover{
+  transform: scale(1.1);
+}
 
 main p{
   width: 38.2rem;
