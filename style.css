@@ -55,7 +55,7 @@ form input{
 
 form input::placeholder{
   color: var(--color-terciary);
-  font-family: Mulish;
+  font-family: Mulish,sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -76,7 +76,7 @@ main h1{
   margin-top: 3.1rem;
   margin-bottom: .8rem;
   color: var(--color-secondary);
-  font-family: Mulish;
+  font-family: Mulish,sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -103,7 +103,7 @@ main div img{
 main p{
   width: 38.2rem;
   color: var(--color-primary);
-  font-family: Mulish;
+  font-family: Mulish,sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -127,7 +127,7 @@ aside h1{
   
   
   color: var(--color-primary);
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -149,7 +149,7 @@ aside .flex h2, aside .flex p{
 }
 aside .flex h2{
   color: var(--color-primary);
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -159,7 +159,7 @@ aside .flex h2{
 
 aside .flex p{
   color: var(--color-primary);
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
@@ -180,7 +180,7 @@ footer{
 
 footer p{
   color: var(--color-terciary);
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
